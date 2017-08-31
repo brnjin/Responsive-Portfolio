@@ -144,13 +144,13 @@ body {
 
 
 .input {
-	width: 578px;
+	width: 100%;
 	padding: 6px;
 	margin: 12px 0px 20px 0px;
 }
 
 #message {
-	width: 578px;
+	width: 100%;
 	padding: 6px 12px 150px 0px;
 	margin: 12px 0px 20px 0px;
 }
@@ -177,11 +177,15 @@ body {
 .left {
 	float: left;
 	margin:25px 0px 25px 0px;
+	width:275px;
+	height:200px;
 }
 
 .right {
 	float: right;
 	margin:25px 0px 25px 0px;
+	width:275px;
+	height:200px;
 }
 
 .tags-left {
@@ -224,7 +228,7 @@ body {
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 980px) and (min-width: 780px) {
 	#nav {
 		float: right;
 		margin:30px 35px 45px 0px;
@@ -239,10 +243,75 @@ body {
 	.height {
 		float: right;
 	}
+	.left {
+		float:left;
+		width: 360px;
+		height: 270px;
+	}
+	.right {
+		float:left;
+		width: 360px;
+		height: 270px;
+	}	
+	.tags-left {
+		float: right;
+		height: 60px;
+		width: 360px;
+		margin: 220px 230px 50px 0px;
+	}
+	.tags-right {
+		float: right;
+		height: 60px;
+		width: 360px;
+		margin: 210px 230px 35px 0px;
+	}
 }
-@media screen and (max-width: 768px) {
-		body{
-		background-color: red;
+@media screen and (max-width: 768px) and (min-width: 650px) {
+	#name {
+		margin-left: 25px;
+	}
+	#nav {
+		float: right;
+		margin:30px 10px 45px 0px;
+	}	
+	#elephant {
+	width: 330px;
+	height: 250px;
+	}
+	.mid-section{
+		width:auto;
+	}
+	#container{
+		margin: 40px 25px 40px 25px ;
+		width: auto;
+	}
+	#icons {
+		margin: 0px 0px 0px 25px;
+		width: 701px;
+		height: 200px;
+	}
+	.left {
+		width: 47%;
+		height: 230px;
+	}
+	.right {
+		width: 47%;
+		height: 230px;
+	}	
+	.tags-left {
+		width: 300px;
+		height: 60px;
+		margin: 170px 0px 50px 0px;
+	}
+	.tags-right {
+		float: right;
+		width: 300px;
+		height: 60px;
+		margin: 170px 0px 50px 0px;
+	}
+	#pic-tags {
+		width: 638px;
+		height: auto;
 	}
 }
 @media screen and (max-width: 640px) {
